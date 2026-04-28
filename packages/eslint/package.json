@@ -1,6 +1,6 @@
 {
   "name": "@jblib/eslint",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "base eslint config",
   "type": "module",
   "exports": {
@@ -40,6 +40,11 @@
   "author": {
     "name": "Joseph Beck"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joseph-beck/jblib.git",

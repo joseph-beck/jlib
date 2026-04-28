@@ -23,6 +23,11 @@
   "author": {
     "name": "Joseph Beck"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joseph-beck/jblib.git",

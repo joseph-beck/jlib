@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { shouldBeTrue } from './should-be-true'
+import { shouldBeTrue } from './should-be-true.js'
 
 describe('should be true', () => {
   it('should return true for true', () => {

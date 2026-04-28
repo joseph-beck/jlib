@@ -1,7 +1,7 @@
 {
   "name": "@jblib/is",
-  "version": "0.0.1",
-  "description": "is",
+  "version": "0.0.2",
+  "description": "is, condition checks",
   "type": "module",
   "scripts": {
     "build": "tsdown",
@@ -22,6 +22,11 @@
   "author": {
     "name": "Joseph Beck"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joseph-beck/jblib.git",

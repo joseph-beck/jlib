@@ -3,10 +3,18 @@
   "version": "0.0.1",
   "description": "libraries, utilities, and configs i use to make stuff",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -w -r lint:fix",
+    "fmt": "prettier --check --cache .",
+    "fmt:fix": "prettier --write --cache ."
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "prettier": "^3.8.3"
+  }
 }

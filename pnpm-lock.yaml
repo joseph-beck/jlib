@@ -124,6 +124,9 @@ importers:
         specifier: 'catalog:'
         version: 0.5.2(eslint@10.2.1(jiti@2.6.1))
     devDependencies:
+      '@jlib/eslint':
+        specifier: workspace:*
+        version: link:../eslint
       '@types/eslint':
         specifier: 'catalog:'
         version: 9.6.1

@@ -22,7 +22,8 @@
     "typescript": "catalog:",
     "eslint": "catalog:",
     "@types/eslint": "catalog:",
-    "prettier": "catalog:"
+    "prettier": "catalog:",
+    "@jlib/eslint": "workspace:*"
   },
   "peerDependencies": {
     "eslint": "^9.0.0 || ^10.0.0"

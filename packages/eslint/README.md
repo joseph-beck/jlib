@@ -3,10 +3,10 @@
 defaults for eslint configs.
 
 ```ts
-import { config } from '@jlib/eslint'
+import { jlibConfig } from '@jlib/eslint'
 
 export default [
-  ...config,
+  ...jlibConfig,
   // Add your own customisations here
 ]
 ```

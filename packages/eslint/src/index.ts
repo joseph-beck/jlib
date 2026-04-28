@@ -31,7 +31,7 @@ const config: Linter.Config[] = [
   ...defaults,
   {
     name: 'jlib/ignore',
-    ignores: ['**/build/**', '**/coverage/**', '**/dist/**', 'dist', 'coverage', 'dev-dist', '.vite'],
+    ignores: ['**/build/**', '**/coverage/**', '**/dist/**', '**/dev-dist/**', '**/.vite/**'],
   },
   {
     name: 'jlib/ts',

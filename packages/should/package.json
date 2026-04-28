@@ -1,7 +1,7 @@
 {
   "name": "@jblib/should",
-  "version": "0.0.1",
-  "description": "should",
+  "version": "0.0.2",
+  "description": "should, assertions that throw errors when conditions aren't met",
   "type": "module",
   "scripts": {
     "build": "tsdown",
@@ -17,7 +17,8 @@
     "tsdown": "catalog:"
   },
   "keywords": [
-    "should"
+    "should",
+    "assert"
   ],
   "author": {
     "name": "Joseph Beck"

@@ -16,6 +16,7 @@
     "eslint-plugin-import": "catalog:",
     "eslint-plugin-simple-import-sort": "catalog:",
     "globals": "catalog:",
+    "@stylistic/eslint-plugin": "catalog:",
     "@eslint/js": "catalog:"
   },
   "devDependencies": {

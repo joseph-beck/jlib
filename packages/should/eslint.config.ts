@@ -1,3 +1,3 @@
-import { config } from '@jlib/eslint';
+import { config } from '@jlib/eslint'
 
-export default [...config];
+export default [...config]

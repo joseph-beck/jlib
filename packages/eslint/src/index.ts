@@ -1,3 +1,4 @@
+import stylisticPlugin from '@stylistic/eslint-plugin'
 import { type Linter } from 'eslint'
 import importPlugin from 'eslint-plugin-import'
 import importSortPlugin from 'eslint-plugin-simple-import-sort'
@@ -6,16 +7,21 @@ import tseslint from 'typescript-eslint'
 
 import { importRules } from './rules/import'
 import { importSortRules } from './rules/import-sort'
+import { javascriptRules } from './rules/javascript'
+import { stylisticRules } from './rules/stylistic'
 import { typescriptRules } from './rules/typescript'
 
 const rules = {
   ...typescriptRules,
   ...importRules,
   ...importSortRules,
+  ...stylisticRules,
+  ...javascriptRules,
 }
 
 const plugins = {
   '@typescript-eslint': tseslint.plugin,
+  '@stylistic': stylisticPlugin,
   import: importPlugin,
   'simple-import-sort': importSortPlugin,
 }
@@ -23,7 +29,7 @@ const plugins = {
 const config: Linter.Config[] = [
   {
     name: 'jlib/ignore',
-    ignores: ['**/build/**', '**/coverage/**', '**/dist/**'],
+    ignores: ['**/build/**', '**/coverage/**', '**/dist/**', 'dist', 'coverage', 'dev-dist', '.vite'],
   },
   {
     name: 'jlib/ts',

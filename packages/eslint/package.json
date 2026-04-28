@@ -33,7 +33,10 @@
   "peerDependencies": {
     "eslint": "^9.0.0 || ^10.0.0"
   },
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "config"
+  ],
   "author": {
     "name": "Joseph Beck"
   },

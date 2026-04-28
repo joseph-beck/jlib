@@ -16,8 +16,17 @@
     "prettier": "catalog:",
     "tsdown": "catalog:"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "should"
+  ],
+  "author": {
+    "name": "Joseph Beck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseph-beck/jblib.git",
+    "directory": "packages/should"
+  },
   "license": "MIT",
   "packageManager": "pnpm@10.33.0",
   "exports": {

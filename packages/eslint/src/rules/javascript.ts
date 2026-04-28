@@ -65,6 +65,18 @@ const rules: Linter.RulesRecord = {
   'no-duplicate-case': 'error',
   // Enforce no variable declarations in case clauses
   'no-case-declarations': 'error',
+  // Enforce === and !==
+  eqeqeq: ['error', 'always'],
+  // Never use eval
+  'no-eval': 'error',
+  // Never use implied eval
+  'no-implied-eval': 'error',
+  // Discourage non-null assertions
+  '@typescript-eslint/no-non-null-assertion': 'warn',
+  // Use ?? over ||
+  'prefer-nullish-coalescing': 'warn',
+  // Use optional chaining
+  'prefer-optional-chaining': 'error',
 }
 
 export { rules as javascriptRules }

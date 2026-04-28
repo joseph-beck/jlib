@@ -12,11 +12,9 @@
     "lint:fix": "eslint ./src --fix"
   },
   "dependencies": {
-    "typescript-eslint": "catalog:",
     "eslint-plugin-react": "catalog:",
     "eslint-plugin-react-hooks": "catalog:",
     "eslint-plugin-react-refresh": "catalog:",
-    "globals": "catalog:",
     "@eslint/js": "catalog:"
   },
   "devDependencies": {

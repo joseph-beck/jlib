@@ -123,12 +123,6 @@ importers:
       eslint-plugin-react-refresh:
         specifier: 'catalog:'
         version: 0.5.2(eslint@10.2.1(jiti@2.6.1))
-      globals:
-        specifier: 'catalog:'
-        version: 17.5.0
-      typescript-eslint:
-        specifier: 'catalog:'
-        version: 8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
     devDependencies:
       '@types/eslint':
         specifier: 'catalog:'

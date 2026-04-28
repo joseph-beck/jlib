@@ -1,5 +1,5 @@
 {
-  "name": "@jlib/eslint-react",
+  "name": "@jblib/eslint-react",
   "version": "0.0.1",
   "description": "base eslint react config",
   "type": "module",
@@ -23,7 +23,7 @@
     "eslint": "catalog:",
     "@types/eslint": "catalog:",
     "prettier": "catalog:",
-    "@jlib/eslint": "workspace:*",
+    "@jblib/eslint": "workspace:*",
     "tsdown": "catalog:"
   },
   "peerDependencies": {

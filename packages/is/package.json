@@ -1,5 +1,5 @@
 {
-  "name": "@jlib/is",
+  "name": "@jblib/is",
   "version": "0.0.1",
   "description": "is",
   "type": "module",
@@ -12,7 +12,7 @@
   "devDependencies": {
     "vitest": "catalog:",
     "typescript": "catalog:",
-    "@jlib/eslint": "workspace:*",
+    "@jblib/eslint": "workspace:*",
     "prettier": "catalog:",
     "tsdown": "catalog:"
   },

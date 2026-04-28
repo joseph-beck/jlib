@@ -1,14 +1,14 @@
-# jlib eslint react
+# jblib eslint react
 
-defaults for eslint react configs. it is recommended to use this alongside [@jlib/eslint](../eslint/).
+defaults for eslint react configs. it is recommended to use this alongside [@jblib/eslint](../eslint/).
 
 ```ts
-import { jlibConfig } from '@jlib/eslint'
-import { jlibReactConfig } from '@jlib/eslint-react'
+import { jblibConfig } from '@jblib/eslint'
+import { jblibReactConfig } from '@jblib/eslint-react'
 
 const config: Linter.Config[] = [
-  ...jlibConfig
-  ...jlibReactConfig,
+  ...jblibConfig
+  ...jblibReactConfig,
   // Add your own customisations here
 ]
 

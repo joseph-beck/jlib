@@ -1,13 +1,13 @@
-# jlib eslint
+# jblib eslint
 
 defaults for eslint configs.
 
 ```ts
-import { jlibConfig } from '@jlib/eslint'
+import { jblibConfig } from '@jblib/eslint'
 import { type Linter } from 'eslint'
 
 const config: Linter.Config[] = [
-  ...jlibConfig,
+  ...jblibConfig,
   // Add your own customisations here
 ]
 

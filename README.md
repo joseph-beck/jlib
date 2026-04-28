@@ -1,3 +1,3 @@
-# jlib
+# jblib
 
 ts libraries and configs

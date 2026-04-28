@@ -30,11 +30,11 @@ const plugins = {
 const config: Linter.Config[] = [
   ...defaults,
   {
-    name: 'jlib/ignore',
+    name: 'jblib/ignore',
     ignores: ['**/build/**', '**/coverage/**', '**/dist/**', '**/dev-dist/**', '**/.vite/**'],
   },
   {
-    name: 'jlib/ts',
+    name: 'jblib/ts',
     files: ['**/*.{js,ts,tsx}'],
     languageOptions: {
       sourceType: 'module',
@@ -54,4 +54,4 @@ const config: Linter.Config[] = [
   },
 ]
 
-export { config as jlibConfig }
+export { config as jblibConfig }

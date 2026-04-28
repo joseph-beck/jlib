@@ -160,7 +160,7 @@ importers:
         specifier: 'catalog:'
         version: 0.5.2(eslint@10.2.1(jiti@2.6.1))
     devDependencies:
-      '@jlib/eslint':
+      '@jblib/eslint':
         specifier: workspace:*
         version: link:../eslint
       '@types/eslint':
@@ -181,7 +181,7 @@ importers:
 
   packages/is:
     devDependencies:
-      '@jlib/eslint':
+      '@jblib/eslint':
         specifier: workspace:*
         version: link:../eslint
       prettier:
@@ -199,7 +199,7 @@ importers:
 
   packages/should:
     devDependencies:
-      '@jlib/eslint':
+      '@jblib/eslint':
         specifier: workspace:*
         version: link:../eslint
       prettier:

@@ -17,11 +17,11 @@ const plugins = {
 
 const config: Linter.Config[] = [
   {
-    name: 'jlib/tsx',
+    name: 'jblib/tsx',
     files: ['**/*.{ts,tsx}'],
     rules,
     plugins,
   },
 ]
 
-export { config as jlibReactConfig }
+export { config as jblibReactConfig }

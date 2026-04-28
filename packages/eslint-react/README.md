@@ -6,9 +6,11 @@ defaults for eslint react configs. it is recommended to use this alongside [@jli
 import { jlibConfig } from '@jlib/eslint'
 import { jlibReactConfig } from '@jlib/eslint-react'
 
-export default [
+const config: Linter.Config[] = [
   ...jlibConfig
   ...jlibReactConfig,
   // Add your own customisations here
 ]
+
+export default config
 ```

@@ -4,9 +4,12 @@ defaults for eslint configs.
 
 ```ts
 import { jlibConfig } from '@jlib/eslint'
+import { type Linter } from 'eslint'
 
-export default [
+const config: Linter.Config[] = [
   ...jlibConfig,
   // Add your own customisations here
 ]
+
+export default config
 ```

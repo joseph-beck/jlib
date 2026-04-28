@@ -3,13 +3,17 @@
   "version": "0.0.1",
   "description": "base eslint config",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
   },
   "scripts": {
     "build": "tsc -b",
     "test": "vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "typescript-eslint": "catalog:",

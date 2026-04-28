@@ -1,5 +1,10 @@
 {
   "extends": "./tsconfig.base.json",
   "files": [],
-  "references": [{ "path": "./packages/is" }, { "path": "./packages/should" }]
+  "references": [
+    { "path": "./packages/is" },
+    { "path": "./packages/should" },
+    { "path": "./packages/eslint" },
+    { "path": "./packages/eslint-react" }
+  ]
 }

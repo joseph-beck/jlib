@@ -7,3 +7,9 @@ settings:
 importers:
 
   .: {}
+
+  packages/eslint: {}
+
+  packages/is: {}
+
+  packages/should: {}

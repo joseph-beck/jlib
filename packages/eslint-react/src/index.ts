@@ -2,7 +2,13 @@ import { type Linter } from 'eslint'
 import react from 'eslint-plugin-react'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
-const rules = {}
+import { reactRules } from './rules/react.js'
+import { reactRefreshRules } from './rules/react-refresh.js'
+
+const rules = {
+  ...reactRules,
+  ...reactRefreshRules,
+}
 
 const plugins = {
   react: react,

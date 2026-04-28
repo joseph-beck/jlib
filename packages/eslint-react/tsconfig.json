@@ -4,5 +4,5 @@
     "composite": true,
     "noEmit": false
   },
-  "include": ["src", "eslint.config.ts"]
+  "include": ["src", "*.config.ts"]
 }

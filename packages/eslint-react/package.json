@@ -2,11 +2,13 @@
   "name": "@jlib/eslint-react",
   "version": "0.0.1",
   "description": "base eslint react config",
+  "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "tsc -b",
+    "build": "tsdown",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -21,7 +23,8 @@
     "eslint": "catalog:",
     "@types/eslint": "catalog:",
     "prettier": "catalog:",
-    "@jlib/eslint": "workspace:*"
+    "@jlib/eslint": "workspace:*",
+    "tsdown": "catalog:"
   },
   "peerDependencies": {
     "eslint": "^9.0.0 || ^10.0.0"
@@ -29,5 +32,11 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "publishConfig": {
+    "exports": {
+      ".": "./dist/index.js",
+      "./package.json": "./package.json"
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import { isNumber } from './is-number'
-import { isString } from './is-string'
+import { isNumber } from './is-number.js'
+import { isString } from './is-string.js'
 
 export { isNumber, isString }

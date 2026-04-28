@@ -5,12 +5,12 @@ import importSortPlugin from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
-import { defaults } from './rules/defaults'
-import { importRules } from './rules/import'
-import { importSortRules } from './rules/import-sort'
-import { javascriptRules } from './rules/javascript'
-import { stylisticRules } from './rules/stylistic'
-import { typescriptRules } from './rules/typescript'
+import { defaults } from './rules/defaults.js'
+import { importRules } from './rules/import.js'
+import { importSortRules } from './rules/import-sort.js'
+import { javascriptRules } from './rules/javascript.js'
+import { stylisticRules } from './rules/stylistic.js'
+import { typescriptRules } from './rules/typescript.js'
 
 const rules = {
   ...typescriptRules,

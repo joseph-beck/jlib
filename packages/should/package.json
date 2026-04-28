@@ -2,8 +2,9 @@
   "name": "@jlib/should",
   "version": "0.0.1",
   "description": "should",
+  "type": "module",
   "scripts": {
-    "build": "tsc -b",
+    "build": "tsdown",
     "test": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -12,10 +13,21 @@
     "vitest": "catalog:",
     "typescript": "catalog:",
     "@jlib/eslint": "workspace:*",
-    "prettier": "catalog:"
+    "prettier": "catalog:",
+    "tsdown": "catalog:"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": "./dist/index.js",
+      "./package.json": "./package.json"
+    }
+  }
 }

@@ -1,6 +1,8 @@
 import { type Linter } from 'eslint'
 
 const rules: Linter.RulesRecord = {
+  // No explicit any, always prefer a more specific type
+  '@typescript-eslint/no-explicit-any': 'error',
   // No floating promises, always handle them with await or .then/.catch
   '@typescript-eslint/no-floating-promises': 'error',
   // Warn about async functions which have no await expression

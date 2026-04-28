@@ -63,6 +63,8 @@ const rules: Linter.RulesRecord = {
   // Enforce no duplicates
   'no-dupe-else-if': 'error',
   'no-duplicate-case': 'error',
+  // Enforce no variable declarations in case clauses
+  'no-case-declarations': 'error',
 }
 
 export { rules as javascriptRules }

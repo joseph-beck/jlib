@@ -10,6 +10,7 @@ import { importSortRules } from './rules/import-sort'
 import { javascriptRules } from './rules/javascript'
 import { stylisticRules } from './rules/stylistic'
 import { typescriptRules } from './rules/typescript'
+import { defaults } from './rules/defaults'
 
 const rules = {
   ...typescriptRules,
@@ -27,6 +28,7 @@ const plugins = {
 }
 
 const config: Linter.Config[] = [
+  ...defaults,
   {
     name: 'jlib/ignore',
     ignores: ['**/build/**', '**/coverage/**', '**/dist/**', 'dist', 'coverage', 'dev-dist', '.vite'],

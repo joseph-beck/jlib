@@ -8,9 +8,8 @@
   },
   "scripts": {
     "build": "tsc -b",
-    "test": "vitest",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "engines": {
     "node": ">=18"
@@ -24,7 +23,6 @@
     "@eslint/js": "catalog:"
   },
   "devDependencies": {
-    "vitest": "catalog:",
     "typescript": "catalog:",
     "eslint": "catalog:",
     "@types/eslint": "catalog:",

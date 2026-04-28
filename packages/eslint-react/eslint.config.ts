@@ -1,6 +1,6 @@
 import { jlibConfig } from '@jlib/eslint'
-import { defineConfig } from 'eslint/config'
+import { type Linter } from 'eslint'
 
-export default defineConfig({
-  ...jlibConfig,
-})
+const config: Linter.Config[] = [...jlibConfig]
+
+export default config

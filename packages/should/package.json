@@ -5,8 +5,8 @@
   "scripts": {
     "build": "tsc -b",
     "test": "vitest",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "vitest": "catalog:",

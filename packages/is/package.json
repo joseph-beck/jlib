@@ -5,12 +5,14 @@
   "scripts": {
     "build": "tsc -b",
     "test": "vitest",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
   "devDependencies": {
     "vitest": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "@jlib/eslint": "workspace:*",
+    "prettier": "catalog:"
   },
   "keywords": [],
   "author": "",

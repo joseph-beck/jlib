@@ -1,3 +1,3 @@
-import { shouldBeTrue } from './should-be-true';
+import { shouldBeTrue } from './should-be-true'
 
-export { shouldBeTrue };
+export { shouldBeTrue }

@@ -2,8 +2,30 @@
   "name": "@jlib/eslint",
   "version": "0.0.1",
   "description": "base eslint config",
-  "main": "index.js",
-  "scripts": {},
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "dependencies": {
+    "typescript-eslint": "catalog:",
+    "globals": "catalog:",
+    "@eslint/js": "catalog:"
+  },
+  "devDependencies": {
+    "vitest": "catalog:",
+    "typescript": "catalog:",
+    "eslint": "catalog:",
+    "@types/eslint": "catalog:",
+    "prettier": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0 || ^10.0.0"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",

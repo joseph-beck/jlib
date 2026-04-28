@@ -1,14 +1,26 @@
-import tseslint from 'typescript-eslint';
-import globals from 'globals';
-import type { Linter } from 'eslint';
+import { type Linter } from 'eslint'
+import importPlugin from 'eslint-plugin-import'
+import importSortPlugin from 'eslint-plugin-simple-import-sort'
+import globals from 'globals'
+import tseslint from 'typescript-eslint'
 
-const rules = {};
+import { importRules } from './rules/import'
+import { importSortRules } from './rules/import-sort'
+import { typescriptRules } from './rules/typescript'
+
+const rules = {
+  ...typescriptRules,
+  ...importRules,
+  ...importSortRules,
+}
 
 const plugins = {
   '@typescript-eslint': tseslint.plugin,
-};
+  import: importPlugin,
+  'simple-import-sort': importSortPlugin,
+}
 
-const config: Array<Linter.Config> = [
+const config: Linter.Config[] = [
   {
     name: 'jlib/ignore',
     ignores: ['**/build/**', '**/coverage/**', '**/dist/**'],
@@ -31,6 +43,6 @@ const config: Array<Linter.Config> = [
     rules,
     plugins,
   },
-];
+]
 
-export { config };
+export { config }

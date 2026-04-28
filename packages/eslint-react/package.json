@@ -1,7 +1,7 @@
 {
-  "name": "@jlib/eslint",
+  "name": "@jlib/eslint-react",
   "version": "0.0.1",
-  "description": "base eslint config",
+  "description": "base eslint react config",
   "exports": {
     ".": "./src/index.ts"
   },
@@ -13,8 +13,9 @@
   },
   "dependencies": {
     "typescript-eslint": "catalog:",
-    "eslint-plugin-import": "catalog:",
-    "eslint-plugin-simple-import-sort": "catalog:",
+    "eslint-plugin-react": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-react-refresh": "catalog:",
     "globals": "catalog:",
     "@eslint/js": "catalog:"
   },

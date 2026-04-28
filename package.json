@@ -6,7 +6,7 @@
     "build": "pnpm -r build",
     "test": "pnpm -r test",
     "lint": "pnpm -r lint",
-    "lint:fix": "pnpm -w -r lint:fix",
+    "lint:fix": "pnpm -r lint:fix",
     "fmt": "prettier --check --cache .",
     "fmt:fix": "prettier --write --cache ."
   },

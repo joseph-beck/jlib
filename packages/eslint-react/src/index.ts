@@ -18,4 +18,4 @@ const config: Linter.Config[] = [
   },
 ]
 
-export { config }
+export { config as jlibReactConfig }

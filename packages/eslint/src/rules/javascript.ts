@@ -71,12 +71,6 @@ const rules: Linter.RulesRecord = {
   'no-eval': 'error',
   // Never use implied eval
   'no-implied-eval': 'error',
-  // Discourage non-null assertions
-  '@typescript-eslint/no-non-null-assertion': 'warn',
-  // Use ?? over ||
-  'prefer-nullish-coalescing': 'warn',
-  // Use optional chaining
-  'prefer-optional-chaining': 'error',
 }
 
 export { rules as javascriptRules }

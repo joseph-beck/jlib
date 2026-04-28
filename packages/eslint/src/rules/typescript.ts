@@ -53,6 +53,10 @@ const rules: Linter.RulesRecord = {
       ignoreParameters: true,
     },
   ],
+  // Discourage non-null assertions
+  '@typescript-eslint/no-non-null-assertion': 'warn',
+  // Prefer the use of ?? over ||
+  '@typescript-eslint/prefer-nullish-coalescing': 'warn',
 }
 
 export { rules as typescriptRules }

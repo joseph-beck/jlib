@@ -3,6 +3,8 @@ name: Checks
 # Run this workflow on every commit to every branch.
 on:
   push:
+    branches: [ "main" ]
+  pull_request:
 
 jobs:
   # Test build the application.

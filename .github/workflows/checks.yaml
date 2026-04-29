@@ -7,9 +7,9 @@ on:
   pull_request:
 
 jobs:
-  # Test build the application.
+  # Test and build the application.
   build:
-    name: Build
+    name: Build and Test
     runs-on: ubuntu-latest
 
     steps:
@@ -31,29 +31,7 @@ jobs:
       - name: Build
         run: pnpm run build
 
-  # Run all unit testing libraries, e2e tests are done seperately.
-  # This uses Vitest.
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6.0.2
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v6.3.0
-        with:
-          node-version-file: .nvmrc
-          package-manager-cache: false
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Run Tests
+      - name: Build
         run: pnpm run test
 
   # All style and lint checks:

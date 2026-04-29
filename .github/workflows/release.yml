@@ -36,7 +36,7 @@ jobs:
       - name: Run ci tests
         run: pnpm run ci
 
-      - name: Run Changesets (version o r publish)
+      - name: Run Changesets (version or publish)
         id: changesets
         uses: changesets/action@v1.7.0
         with:

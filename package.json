@@ -9,6 +9,8 @@
     "lint:fix": "pnpm -r lint:fix",
     "fmt": "prettier --check --cache .",
     "fmt:fix": "prettier --write --cache .",
+    "sherif": "sherif",
+    "sherif:fix": "sherif -f",
     "ci": "pnpm run fmt && pnpm run lint && pnpm run test",
     "changeset": "changeset",
     "changeset:version": "changeset version && pnpm install --no-frozen-lockfile && pnpm fmt:fix",
@@ -22,14 +24,15 @@
     "@arethetypeswrong/core": "catalog:",
     "@changesets/cli": "catalog:",
     "@types/node": "catalog:",
-    "prettier": "catalog:",
-    "publint": "catalog:",
     "eslint": "catalog:",
     "jiti": "catalog:",
-    "typescript": "catalog:",
-    "typescript-eslint": "catalog:",
-    "sherif": "catalog:",
     "jsdom": "catalog:",
-    "tsdown": "catalog:"
-  }
+    "prettier": "catalog:",
+    "publint": "catalog:",
+    "sherif": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:"
+  },
+  "private": true
 }

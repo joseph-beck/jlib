@@ -10,11 +10,11 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "vitest": "catalog:",
-    "typescript": "catalog:",
     "@jblib/eslint": "workspace:*",
     "prettier": "catalog:",
-    "tsdown": "catalog:"
+    "tsdown": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   },
   "keywords": [
     "is"

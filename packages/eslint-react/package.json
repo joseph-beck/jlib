@@ -13,18 +13,18 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@eslint/js": "catalog:",
     "eslint-plugin-react": "catalog:",
     "eslint-plugin-react-hooks": "catalog:",
-    "eslint-plugin-react-refresh": "catalog:",
-    "@eslint/js": "catalog:"
+    "eslint-plugin-react-refresh": "catalog:"
   },
   "devDependencies": {
-    "typescript": "catalog:",
-    "eslint": "catalog:",
-    "@types/eslint": "catalog:",
-    "prettier": "catalog:",
     "@jblib/eslint": "workspace:*",
-    "tsdown": "catalog:"
+    "@types/eslint": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "eslint": "^9.0.0 || ^10.0.0"

@@ -11,7 +11,7 @@
     "fmt:fix": "prettier --write --cache .",
     "sherif": "sherif",
     "sherif:fix": "sherif -f",
-    "ci": "pnpm run fmt && pnpm run lint && pnpm run test",
+    "ci": "pnpm run fmt && pnpm run lint && pnpm run test && pnpm run sherif",
     "changeset": "changeset",
     "changeset:version": "changeset version && pnpm install --no-frozen-lockfile && pnpm fmt:fix",
     "changeset:publish": "changeset publish"

@@ -1,4 +1,9 @@
-import { isNumber } from './is-number.js'
-import { isString } from './is-string.js'
-
-export { isNumber, isString }
+export { isArray } from './is-array.js'
+export { isBoolean } from './is-boolean.js'
+export { isDefined } from './is-defined.js'
+export { isError } from './is-error.js'
+export { isFunction } from './is-function.js'
+export { isNonEmptyArray } from './is-non-empty-array.js'
+export { isNumber } from './is-number.js'
+export { isObject } from './is-object.js'
+export { isString } from './is-string.js'

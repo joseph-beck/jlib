@@ -1,4 +1,4 @@
-const shouldNever = (message?: string): void => {
+const shouldNever = (message?: string): never => {
   throw new Error(message ?? 'should never be called')
 }
 

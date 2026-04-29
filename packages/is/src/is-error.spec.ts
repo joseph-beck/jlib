@@ -5,7 +5,7 @@ import { isError } from './is-error.js'
 describe('is error', () => {
   it('should return true for errors', () => {
     expect(isError(new Error())).toBe(true)
-    expect(isError(new Error("error message"))).toBe(true)
+    expect(isError(new Error('error message'))).toBe(true)
   })
 
   it('should return false for non-errors', () => {

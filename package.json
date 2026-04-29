@@ -8,7 +8,10 @@
     "lint": "pnpm -r lint",
     "lint:fix": "pnpm -r lint:fix",
     "fmt": "prettier --check --cache .",
-    "fmt:fix": "prettier --write --cache ."
+    "fmt:fix": "prettier --write --cache .",
+    "changeset": "changeset",
+    "changeset:version": "changeset version && pnpm install --no-frozen-lockfile && pnpm fmt:fix",
+    "changeset:publish": "changeset publish"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,7 @@
   "packageManager": "pnpm@10.33.0",
   "devDependencies": {
     "@arethetypeswrong/core": "catalog:",
+    "@changesets/cli": "catalog:",
     "@types/node": "catalog:",
     "prettier": "catalog:",
     "publint": "catalog:",

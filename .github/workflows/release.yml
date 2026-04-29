@@ -2,7 +2,7 @@ name: Release
 
 on:
   push:
-    branches: [ main, alpha, beta ]
+    branches: [main, alpha, beta]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
@@ -30,7 +30,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          cache: "pnpm"
+          cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install
@@ -44,7 +44,7 @@ jobs:
         with:
           version: pnpm run changeset:version
           publish: pnpm run changeset:publish
-          commit: "ci: Version Packages"
-          title: "ci: Version Packages"
+          commit: 'ci: Version Packages'
+          title: 'ci: Version Packages'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

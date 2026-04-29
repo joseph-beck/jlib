@@ -1,0 +1,47 @@
+{
+  "name": "@jblib/has",
+  "version": "0.0.1",
+  "description": "has, check if things have things",
+  "type": "module",
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@jblib/eslint": "workspace:*",
+    "prettier": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "keywords": [
+    "is"
+  ],
+  "author": {
+    "name": "Joseph Beck"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseph-beck/jblib.git",
+    "directory": "packages/has"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": "./dist/index.js",
+      "./package.json": "./package.json"
+    }
+  }
+}

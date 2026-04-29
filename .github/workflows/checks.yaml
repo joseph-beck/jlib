@@ -19,10 +19,11 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v6.3.0
         with:
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          package-manager-cache: false
 
       - name: Install dependencies
         run: pnpm install
@@ -43,10 +44,11 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v6.3.0
         with:
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          package-manager-cache: false
 
       - name: Install dependencies
         run: pnpm install
@@ -65,8 +67,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.2
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - name: Setup Node
+        uses: actions/setup-node@v6.3.0
+        with:
+          node-version-file: .nvmrc
+          package-manager-cache: false
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -75,6 +80,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Run Sherif Check
+        run: pnpm run sherif
 
       - name: Run Prettier Check
         run: pnpm run fmt

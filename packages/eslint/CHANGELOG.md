@@ -1,5 +1,11 @@
 # @jblib/eslint
 
+## 0.0.4
+
+### Patch Changes
+
+- d044d27: fix release
+
 ## 0.0.3
 
 ### Patch Changes

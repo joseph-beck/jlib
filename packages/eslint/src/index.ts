@@ -43,7 +43,7 @@ const config: Linter.Config[] = [
       parserOptions: {
         parser: tseslint.parser,
         tsconfigRootDir: process.cwd(),
-        project: ['./tsconfig.json'],
+        project: true,
       },
       globals: {
         ...globals.browser,

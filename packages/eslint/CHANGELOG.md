@@ -1,5 +1,12 @@
 # @jblib/eslint
 
+## 0.0.7
+
+### Patch Changes
+
+- b95e1f6: fix parser options
+- b6272bd: fix eslint config issues
+
 ## 0.0.6
 
 ### Patch Changes

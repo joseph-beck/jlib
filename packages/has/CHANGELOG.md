@@ -1,5 +1,11 @@
 # @jblib/has
 
+## 0.0.3
+
+### Patch Changes
+
+- b6272bd: fix eslint config issues
+
 ## 0.0.2
 
 ### Patch Changes

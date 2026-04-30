@@ -1,5 +1,11 @@
 # @jblib/eslint
 
+## 0.0.5
+
+### Patch Changes
+
+- f43b193: fix incorrect project config
+
 ## 0.0.4
 
 ### Patch Changes

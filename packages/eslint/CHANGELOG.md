@@ -1,5 +1,11 @@
 # @jblib/eslint
 
+## 0.0.6
+
+### Patch Changes
+
+- a559fca: fix remove process.cwd() in eslint config
+
 ## 0.0.5
 
 ### Patch Changes

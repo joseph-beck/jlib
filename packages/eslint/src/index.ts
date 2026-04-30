@@ -41,7 +41,8 @@ const config: Linter.Config[] = [
       ecmaVersion: 2020,
       parser: tseslint.parser,
       parserOptions: {
-        tsconfigRootDir: import.meta.dirname,
+        parser: tseslint.parser,
+        project: true,
       },
       globals: {
         ...globals.browser,

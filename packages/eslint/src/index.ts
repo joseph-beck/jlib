@@ -42,7 +42,6 @@ const config: Linter.Config[] = [
       parser: tseslint.parser,
       parserOptions: {
         parser: tseslint.parser,
-        tsconfigRootDir: process.cwd(),
         project: true,
       },
       globals: {

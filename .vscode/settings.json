@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["customisations", "jiti", "jblib", "tsdown", "vitest"]
+  "cSpell.words": ["customisations", "jiti", "jblib", "tsdown", "vitest"],
+  "eslint.workingDirectories": [{ "mode": "auto" }]
 }

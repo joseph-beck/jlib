@@ -1,5 +1,11 @@
 # @jblib/eslint-react
 
+## 0.0.5
+
+### Patch Changes
+
+- 40631ab: tweak to allow nested components as props
+
 ## 0.0.4
 
 ### Patch Changes

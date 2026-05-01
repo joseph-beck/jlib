@@ -13,6 +13,6 @@
  * isUndefined([]) // false
  * ```
  */
-const isUndefined = (v: unknown): v is undefined => typeof v === 'undefined'
+const isUndefined = (v: unknown): v is undefined => v === undefined
 
 export { isUndefined }

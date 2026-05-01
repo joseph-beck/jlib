@@ -1,5 +1,12 @@
 # @jblib/is
 
+## 0.0.6
+
+### Patch Changes
+
+- ae8d79e: add isPositiveNumber and isNegativeNumber
+- 4728ac3: add isUndefined
+
 ## 0.0.5
 
 ### Patch Changes

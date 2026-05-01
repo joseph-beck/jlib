@@ -39,7 +39,12 @@ const rules: Linter.RulesRecord = {
   // Enforce that children is not used as a prop
   'react/no-children-prop': 'error',
   // Warn against unstable nested component definitions
-  'react/no-unstable-nested-components': 'warn',
+  'react/no-unstable-nested-components': [
+    'warn',
+    {
+      allowAsProps: true,
+    },
+  ],
   // Prefer destructuring props/state
   'react/destructuring-assignment': ['warn', 'always'],
   // No accidental duplicate props

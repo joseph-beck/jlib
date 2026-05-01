@@ -1,5 +1,14 @@
 # @jblib/is
 
+## 0.0.7
+
+### Patch Changes
+
+- e8181bc: add isSymbol
+- df2869f: add isNull and isEmptyArray
+- f2b4f7a: add isSet, isMap and isPromise
+- bcf9f36: add isFalsy, isTruthy and isRegExp
+
 ## 0.0.6
 
 ### Patch Changes
